@@ -57,10 +57,6 @@ function removeFromCart(cart, productId) {
 }
 
 function calculateCartSubtotal(cart) {
-  if (cart.length) {
-    return 0;
-  }
-
   return cart.reduce(
     (subtotal, item) => subtotal + item.price * item.quantity,
     0,
